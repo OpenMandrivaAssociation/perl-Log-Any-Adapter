@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 4
 
 Summary:    No summary found
 License:    GPL+ or Artistic
@@ -17,6 +17,7 @@ BuildRequires: perl(Log::Any)
 BuildRequires: perl(Scope::Guard)
 BuildRequires: perl(Test::More)
 Requires: perl(Log::Any)
+Requires: perl(Scope::Guard)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
