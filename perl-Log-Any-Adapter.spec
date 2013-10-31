@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Log/Log-Any-Adapter-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Guard)
 BuildRequires: perl(Devel::GlobalDestruction)
 BuildRequires: perl(Capture::Tiny)
 BuildRequires:	perl(Carp)
