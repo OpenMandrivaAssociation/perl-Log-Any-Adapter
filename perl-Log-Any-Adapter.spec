@@ -1,17 +1,20 @@
 %define upstream_name    Log-Any-Adapter
-%define upstream_version 0.03
+%define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Release:	1
 
 Summary:	Implements Log::Any class methods to specify where logs should be sent
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Log/Log-Any-Adapter-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Guard)
+BuildRequires: perl(Devel::GlobalDestruction)
+BuildRequires: perl(Capture::Tiny)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(Log::Any)
@@ -63,4 +66,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.30.0-1mdv2011.0
 + Revision: 624836
 - import perl-Log-Any-Adapter
+
 
