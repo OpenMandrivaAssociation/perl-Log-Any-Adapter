@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Implements Log::Any class methods to specify where logs should be sent
 License:	GPL+ or Artistic
